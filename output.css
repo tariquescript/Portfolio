@@ -213,6 +213,9 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
@@ -278,35 +281,14 @@
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
-  .bg-\[\#222\] {
-    background-color: #222;
-  }
-  .bg-\[\#333\] {
-    background-color: #333;
-  }
-  .bg-\[\#444\] {
-    background-color: #444;
-  }
   .bg-\[\#555\] {
     background-color: #555;
   }
   .bg-\[\#202124\] {
     background-color: #202124;
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
-  .bg-gray-100 {
-    background-color: var(--color-gray-100);
-  }
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
-  }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
-  }
-  .bg-gray-700 {
-    background-color: var(--color-gray-700);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
@@ -316,12 +298,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-800) 30%, transparent);
     }
-  }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
-  }
-  .bg-gray-950 {
-    background-color: var(--color-gray-950);
   }
   .bg-linear-to-r {
     --tw-gradient-position: to right;
@@ -388,50 +364,14 @@
   .text-\[\#E8EAED\] {
     color: #E8EAED;
   }
-  .text-amber-50 {
-    color: var(--color-amber-50);
-  }
-  .text-gray-100 {
-    color: var(--color-gray-100);
-  }
   .italic {
     font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
   }
-  .opacity-10 {
-    opacity: 10%;
-  }
-  .opacity-50 {
-    opacity: 50%;
-  }
-  .opacity-90 {
-    opacity: 90%;
-  }
-  .bg-blend-darken {
-    background-blend-mode: darken;
-  }
-  .bg-blend-lighten {
-    background-blend-mode: lighten;
-  }
-  .bg-blend-luminosity {
-    background-blend-mode: luminosity;
-  }
-  .bg-blend-multiply {
-    background-blend-mode: multiply;
-  }
-  .bg-blend-normal {
-    background-blend-mode: normal;
-  }
   .bg-blend-overlay {
     background-blend-mode: overlay;
-  }
-  .bg-blend-saturation {
-    background-blend-mode: saturation;
-  }
-  .bg-blend-soft-light {
-    background-blend-mode: soft-light;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -444,6 +384,21 @@
   .sm\:static {
     @media (width >= 40rem) {
       position: static;
+    }
+  }
+  .sm\:left-5 {
+    @media (width >= 40rem) {
+      left: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:left-10 {
+    @media (width >= 40rem) {
+      left: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:left-100 {
+    @media (width >= 40rem) {
+      left: calc(var(--spacing) * 100);
     }
   }
   .sm\:grid {
@@ -464,6 +419,16 @@
   .sm\:w-\[70\%\] {
     @media (width >= 40rem) {
       width: 70%;
+    }
+  }
+  .sm\:w-\[80\%\] {
+    @media (width >= 40rem) {
+      width: 80%;
+    }
+  }
+  .sm\:w-\[100\%\] {
+    @media (width >= 40rem) {
+      width: 100%;
     }
   }
   .sm\:w-full {
@@ -489,6 +454,26 @@
   .sm\:items-center {
     @media (width >= 40rem) {
       align-items: center;
+    }
+  }
+  .sm\:justify-around {
+    @media (width >= 40rem) {
+      justify-content: space-around;
+    }
+  }
+  .sm\:justify-center {
+    @media (width >= 40rem) {
+      justify-content: center;
+    }
+  }
+  .sm\:justify-end {
+    @media (width >= 40rem) {
+      justify-content: flex-end;
+    }
+  }
+  .sm\:justify-evenly {
+    @media (width >= 40rem) {
+      justify-content: space-evenly;
     }
   }
   .sm\:gap-y-5 {
@@ -523,11 +508,6 @@
       line-height: calc(var(--spacing) * 8);
     }
   }
-  .md\:w-\[10\%\] {
-    @media (width >= 48rem) {
-      width: 10%;
-    }
-  }
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
@@ -538,9 +518,24 @@
       column-gap: calc(var(--spacing) * 5);
     }
   }
-  .md\:text-amber-300 {
-    @media (width >= 48rem) {
-      color: var(--color-amber-300);
+  .lg\:w-\[30\%\] {
+    @media (width >= 64rem) {
+      width: 30%;
+    }
+  }
+  .lg\:w-\[60\%\] {
+    @media (width >= 64rem) {
+      width: 60%;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
+    }
+  }
+  .lg\:w-\[80\%\] {
+    @media (width >= 64rem) {
+      width: 80%;
     }
   }
 }
