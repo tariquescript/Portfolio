@@ -151,7 +151,7 @@
       <div class="flex items-center gap-4">
         <!-- LOGO -->
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-          <img src="./pics/logo.png" alt="FE Global Education" class="h-6 w-6 object-contain" />
+          <img src="./src/pics/logo.png" alt="FE Global Education" class="h-6 w-6 object-contain" />
         </div>
 
         <div>
@@ -169,112 +169,221 @@
 
 
 <!-- GITHUB -->
-<section class="max-w-[880px] mx-auto px-6 mt-32">
+<!-- GITHUB -->
+<!-- GITHUB -->
+<!-- GITHUB -->
+ 
+<!-- <section class="max-w-[880px] mx-auto px-6 mt-32">
   <h3 class="text-lg font-medium text-white/90 mb-6">github</h3>
 
-  <!-- Graph container -->
-<div class="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-4">
-  <div class="overflow-x-auto">
-    <div
-      id="github-graph"
-      class="min-w-[720px]"
-    ></div>
+  <div class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-4 transition hover:border-white/20">
 
-    <script>
-      fetch("/api/github-contributions")
-        .then(res => res.text())
-        .then(svg => {
-          document.getElementById("github-graph").innerHTML = svg;
-        });
-    </script>
+    <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
 
+    <div class="relative overflow-x-auto">
+      <img
+        src="https://ghchart.rshah.org/0b0d10/tariquescript"
+        alt="GitHub contribution activity"
+        class="min-w-[720px] opacity-80 transition duration-300 group-hover:opacity-100"
+      />
+    </div>
 
-  </div>
-
-  <!-- footer / legend -->
-  <div class="mt-4 flex items-center justify-between text-xs text-white/50">
-    <span>contributions this year</span>
-    <div class="flex items-center gap-1">
-      <span>less</span>
-      <span class="h-3 w-3 rounded-sm bg-[#1f2933]"></span>
-      <span class="h-3 w-3 rounded-sm bg-[#0e4429]"></span>
-      <span class="h-3 w-3 rounded-sm bg-[#006d32]"></span>
-      <span class="h-3 w-3 rounded-sm bg-[#26a641]"></span>
-      <span class="h-3 w-3 rounded-sm bg-[#39d353]"></span>
-      <span>more</span>
+    <div class="mt-4 flex items-center justify-between text-xs text-white/40">
+      <span>contribution activity</span>
+      <a href="https://github.com/tariquescript" target="_blank" class="hover:text-white/70 transition">
+        view on github →
+      </a>
     </div>
   </div>
-</div>
+</section> -->
 
-</section>
+
+
+
 
 
 <!-- STACK -->
-<section class="max-w-6xl mx-auto px-6 mt-32">
-  <h3 class="text-2xl font-semibold mb-8">Stack</h3>
-  <div class="flex flex-wrap gap-4">
-    <span class="px-4 py-2 border border-white/10 rounded-lg">Tailwind CSS</span>
-    <span class="px-4 py-2 border border-white/10 rounded-lg">JavaScript</span>
-    <span class="px-4 py-2 border border-white/10 rounded-lg">React</span>
-    <span class="px-4 py-2 border border-white/10 rounded-lg">Vercel</span>
-    <span class="px-4 py-2 border border-white/10 rounded-lg">Netlify</span>
-    <span class="px-4 py-2 border border-white/10 rounded-lg">Cloudflare</span>
+<section class="max-w-[880px] mx-auto px-6 mt-16">
+  <h3 class="text-lg font-medium text-white/90 mb-8">stack</h3>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <!-- Tailwind CSS -->
+    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="h-6 w-6" />
+      <span class="text-sm text-white/80 transition group-hover:text-white">Tailwind CSS</span>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="h-6 w-6" />
+      <span class="text-sm text-white/80 transition group-hover:text-white">JavaScript</span>
+    </div>
+
+    <!-- React -->
+    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="h-6 w-6" />
+      <span class="text-sm text-white/80 transition group-hover:text-white">React</span>
+    </div>
+
+    <!-- Vercel -->
+    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" class="h-6 w-6 invert" />
+      <span class="text-sm text-white/80 transition group-hover:text-white">Vercel</span>
+    </div>
+
+    <!-- Netlify -->
+    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" class="h-6 w-6" />
+      <span class="text-sm text-white/80 transition group-hover:text-white">Netlify</span>
+    </div>
+
+    <!-- Cloudflare -->
+    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare" class="h-6 w-6" />
+      <span class="text-sm text-white/80 transition group-hover:text-white">Cloudflare</span>
+    </div>
   </div>
 </section>
+
 
 <!-- PROJECTS -->
-<section class="max-w-6xl mx-auto px-6 mt-32">
-  <h3 class="text-2xl font-semibold mb-10">Projects</h3>
-
-  <h4 class="text-lg font-medium mb-6">Selected / Major</h4>
-  <div class="grid md:grid-cols-2 gap-8 mb-16">
-    <div class="border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition">
-      <h5 class="font-medium mb-2">FE Global Education</h5>
-      <p class="text-white/70 text-sm">Production-ready education platform.</p>
-    </div>
+<!-- PROJECTS (HOME) -->
+<section id="projects" class="max-w-[880px] mx-auto px-6 mt-25">
+  <!-- Major projects -->
+  <div class="flex items-center justify-between mb-6">
+    <h3 class="text-lg font-medium text-white/90">projects</h3>
+    <a href="projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
   </div>
 
-  <h4 class="text-lg font-medium mb-6">Small & Practice</h4>
-  <div class="grid md:grid-cols-3 gap-8">
-    <div class="border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition">
-      Google Homepage Clone
-    </div>
-    <div class="border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition">
-      UI Experiments
-    </div>
-    <div class="border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition">
-      Mini JavaScript Apps
-    </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+    <!-- Major card -->
+    <a href="https://feglobaleducation.com" target="_blank"
+       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+      <div class="relative">
+        <p class="text-sm font-medium text-white">FE Global Education</p>
+        <p class="mt-1 text-xs text-white/50">End-to-end design, frontend, hosting</p>
+      </div>
+    </a>
+
+    <a href="https://feglobaleducation.com" target="_blank"
+       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+      <div class="relative">
+        <p class="text-sm font-medium text-white">FE Global Education</p>
+        <p class="mt-1 text-xs text-white/50">End-to-end design, frontend, hosting</p>
+      </div>
+    </a>
+
+    <a href="https://feglobaleducation.com" target="_blank"
+       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+      <div class="relative">
+        <p class="text-sm font-medium text-white">FE Global Education</p>
+        <p class="mt-1 text-xs text-white/50">End-to-end design, frontend, hosting</p>
+      </div>
+    </a>
+
+    <a href="https://feglobaleducation.com" target="_blank"
+       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+      <div class="relative">
+        <p class="text-sm font-medium text-white">FE Global Education</p>
+        <p class="mt-1 text-xs text-white/50">End-to-end design, frontend, hosting</p>
+      </div>
+    </a>
+
+    <!-- placeholder majors -->
+     </div>
+
+  <!-- Small / practice -->
+  <div class="flex items-center justify-between mb-6">
+    <h4 class="text-sm font-medium text-white/70">small & practice</h4>
+    <a href="projects.html#practice" class="text-sm text-white/50 hover:text-white transition">view all</a>
   </div>
+
+   <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+  <!-- small project card -->
+
+   <a href="projects.html#practice" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+    <span class="relative">google homepage clone</span>
+  </a>
+
+  <a href="projects.html#practice" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+    <span class="relative">google homepage clone</span>
+  </a>
+
+  <a href="projects.html#practice" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+    <span class="relative">google homepage clone</span>
+  </a>
+
+  <a href="projects.html#practice" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+    <span class="relative">google homepage clone</span>
+  </a>
 </section>
+
 
 <!-- BLOGS -->
-<section class="max-w-6xl mx-auto px-6 mt-32">
-  <h3 class="text-2xl font-semibold mb-6">Writing</h3>
-  <p class="text-white/70">
-    I’ll be sharing blogs soon — mostly about frontend, UI decisions, and things I learn while building.
-  </p>
+<section id="blog" class="max-w-[880px] mx-auto px-6 mt-25">
+  <div class="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6">
+    <h3 class="text-lg font-medium text-white/90 mb-4">writing</h3>
+    <p class="text-sm text-white/60 max-w-xl leading-6">
+      I’ll be sharing blogs soon — mostly about frontend engineering, UI decisions,
+      performance, and lessons learned while building real products.
+    </p>
+    <p class="mt-4 text-xs text-white/40">coming soon</p>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="max-w-6xl mx-auto px-6 mt-32">
-  <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
-  <p class="text-white/70 mb-4">Feel free to reach out for work, collaboration, or a quick chat.</p>
-  <a href="mailto:tariquescript@gmail.com" class="underline">tariquescript@gmail.com</a>
-</section>
+
 
 <!-- FOOTER -->
-<footer class="max-w-6xl mx-auto px-6 mt-40 mb-10 text-white/50 text-sm">
-  © 2025 Tarique Shaikh
+<footer class="mt-20 mb-10">
+  <div class="max-w-[880px] mx-auto px-6">
+    <div class="flex items-center justify-center border-t border-white/10 pt-8">
+      <p class="text-xs text-white/40 text-center">
+        © 2025 Tarique Shaikh
+      </p>
+    </div>
+  </div>
 </footer>
 
 <script>
-  const btn = document.getElementById('themeToggle');
-  btn.addEventListener('click', () => {
-    document.body.classList.toggle('bg-white');
-    document.body.classList.toggle('text-black');
+  const themeToggleBtn = document.getElementById('themeToggle');
+  const sunIcon = document.getElementById('sunIcon');
+  const moonIcon = document.getElementById('moonIcon');
+
+  if (!themeToggleBtn || !sunIcon || !moonIcon) return;
+
+  // restore theme
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('light');
+    sunIcon.classList.add('hidden');
+    moonIcon.classList.remove('hidden');
+  }
+
+  themeToggleBtn.addEventListener('click', () => {
+    const isLight = document.documentElement.classList.toggle('light');
+    localStorage.theme = isLight ? 'light' : 'dark';
+    sunIcon.classList.toggle('hidden');
+    moonIcon.classList.toggle('hidden');
   });
 </script>
+
+
 
 </body>
 </html>
