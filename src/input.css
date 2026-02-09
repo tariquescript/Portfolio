@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+#github-graph svg text {
+  fill: rgba(255, 255, 255, 0.45);
+  font-size: 10px;
+}
+
+#github-graph svg rect {
+  rx: 2;
+  ry: 2;
+}
+
+#github-graph svg rect[data-level="0"] { fill: #1f2933; }
+#github-graph svg rect[data-level="1"] { fill: #0e4429; }
+#github-graph svg rect[data-level="2"] { fill: #006d32; }
+#github-graph svg rect[data-level="3"] { fill: #26a641; }
+#github-graph svg rect[data-level="4"] { fill: #39d353; }
