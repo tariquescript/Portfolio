@@ -9,35 +9,65 @@
 
 <body class="bg-[#0b0d10] text-[#e6e6eb] antialiased selection:bg-white/10">
 
+
+
 <!-- HEADER -->
-<header class=" sticky top-0 z-50 bg-[#0b0d10]/80 backdrop-blur  ">
+<header class="sticky top-0 z-50 bg-[#0b0d10]/80 backdrop-blur  ">
     <div class="max-w-[880px]  mx-auto border-b border-white/10 " >
         <div class=" mx-auto px-6 py-4 flex items-center justify-between">
     <!-- LEFT: NAME -->
     <span class="text-sm tracking-wide text-white/90">Tarique Shaikh</span>
 
     <!-- RIGHT: NAV + THEME -->
-    <div class="flex items-center gap-6 text-sm text-white/60">
-      <nav class="flex items-center gap-6">
+    <div class="flex items-center gap-4 text-sm text-white/60">
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6">
         <a href="#work" class="hover:text-white transition">work</a>
         <a href="#projects" class="hover:text-white transition">projects</a>
         <a href="#blog" class="hover:text-white transition">blog</a>
       </nav>
 
-      <!-- THEME TOGGLE -->
+      <!-- Theme toggle -->
       <button id="themeToggle" aria-label="Toggle theme" class="p-1 rounded-md hover:bg-white/10 transition">
-        <!-- SUN ICON (default) -->
         <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m0-11.314L7.05 7.05m9.9 9.9l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
         </svg>
-        <!-- MOON ICON -->
         <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
         </svg>
       </button>
+
+      <!-- Hamburger / Close -->
+      <button id="menuToggle" class="md:hidden p-1 rounded-md hover:bg-white/10 transition" aria-label="Toggle menu">
+        <!-- Hamburger icon -->
+        <svg id="menuIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close icon -->
+        <svg id="closeIcon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
+  </div>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobileOverlay" class="fixed inset-0 z-40 hidden bg-black/40 ">
+    
+  </div>
+
+  <!-- Mobile menu (overlay, not pushing content) -->
+  <div id="mobileMenu"
+      class="fixed top-[64px] left-0 right-0 z-50 hidden
+         bg-[#0b0d10]/95 backdrop-blur border-b border-white/10">
+
+      <nav class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80">
+        <a href="#work" class="mobile-link hover:text-white transition">work</a>
+        <a href="#projects" class="mobile-link hover:text-white transition">projects</a>
+        <a href="#blog" class="mobile-link hover:text-white transition">blog</a>
+      </nav>
   </div>
 
     </div>
@@ -48,12 +78,25 @@
   const sun = document.getElementById('sunIcon');
   const moon = document.getElementById('moonIcon');
 
+  // persist theme
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('light');
+    sun.classList.add('hidden');
+    moon.classList.remove('hidden');
+  }
+
   toggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('light');
+    const isLight = document.documentElement.classList.toggle('light');
+    localStorage.theme = isLight ? 'light' : 'dark';
     sun.classList.toggle('hidden');
     moon.classList.toggle('hidden');
   });
 </script>
+
+
+
+
+
 
 
 
@@ -87,9 +130,10 @@
     <!-- CTA BUTTONS -->
     <div class="flex items-center gap-4 pt-3">
       <a href="#" class="group inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 text-sm transition duration-300 hover:bg-white/5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12)] hover:backdrop-blur">
-        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition transform group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16v-9m0 9l-3-3m3 3l3-3m6 7H5" />
+        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition transform             group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v10m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
         </svg>
+        
         <span>resume</span>
       </a>
      <a href="#contact" class="group inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm transition duration-300 hover:bg-white/90 hover:shadow-[0_8px_30px_rgba(255,255,255,0.25)]">
@@ -151,7 +195,7 @@
       <div class="flex items-center gap-4">
         <!-- LOGO -->
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-          <img src="./src/pics/logo.png" alt="FE Global Education" class="h-6 w-6 object-contain" />
+          <img src="./pics/logo.png" alt="FE Global Education" class=" bg-black rounded-4xl h-6 w-6 object-contain" />
         </div>
 
         <div>
@@ -380,6 +424,62 @@
     localStorage.theme = isLight ? 'light' : 'dark';
     sunIcon.classList.toggle('hidden');
     moonIcon.classList.toggle('hidden');
+  });
+</script>
+
+
+
+<!-- Menu -->
+
+<script>
+  const menuBtn = document.getElementById('menuToggle');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+
+  function openMenu() {
+    mobileMenu.classList.remove('hidden');
+    mobileOverlay.classList.remove('hidden');
+    menuIcon.classList.add('hidden');
+    closeIcon.classList.remove('hidden');
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add('hidden');
+    mobileOverlay.classList.add('hidden');
+    menuIcon.classList.remove('hidden');
+    closeIcon.classList.add('hidden');
+  }
+
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    mobileMenu.classList.contains('hidden') ? openMenu() : closeMenu();
+  });
+
+  // CLICKING OUTSIDE (this is the missing part)
+  document.addEventListener('click', (e) => {
+    if (
+      !mobileMenu.classList.contains('hidden') &&
+      !mobileMenu.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      closeMenu();
+    }
+  });
+
+  // Overlay click (extra safety)
+  mobileOverlay.addEventListener('click', closeMenu);
+
+    // Close on scroll (NEW)
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (!mobileMenu.classList.contains('hidden')) {
+      if (Math.abs(window.scrollY - lastScrollY) > 10) {
+        closeMenu();
+      }
+    }
+    lastScrollY = window.scrollY;
   });
 </script>
 

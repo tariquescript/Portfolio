@@ -32,3 +32,41 @@
 .light .text-white\/60 { color: rgba(0,0,0,0.6); }
 .light .text-white\/50 { color: rgba(0,0,0,0.5); }
 .light .text-white\/40 { color: rgba(0,0,0,0.4); }
+.light .text-white { color: rgba(0,0,0,0.9); }
+.light .text-white\/70 { color: rgba(0,0,0,0.5); }
+
+
+/* ===============================
+   LIGHT MODE OVERRIDES
+   =============================== */
+
+.light body {
+  background-color: #ffffff;
+  color: #0b0d10;
+}
+
+/* Header */
+.light header {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu */
+.light #mobileMenu {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu links */
+.light #mobileMenu a {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.light #mobileMenu a:hover {
+  color: #000000;
+}
+
+/* Mobile overlay */
+.light #mobileOverlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
