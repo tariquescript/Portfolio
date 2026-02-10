@@ -1,17 +1,19 @@
 {
-  "name": "Portfolio",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "tailwindcss": "^4.1.18"
-  },
   "description": ""
 }
