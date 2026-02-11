@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Tarique Shaikh</title>
+  <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body class="bg-[#0b0d10] text-[#e6e6eb] antialiased selection:bg-white/10 transition-colors duration-300">
+
+<!-- HEADER (same as home) -->
+<header class="sticky top-0 z-50 bg-[#0b0d10]/80 backdrop-blur">
+  <div class="max-w-[880px] mx-auto border-b border-white/10">
+    <div class="px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-sm tracking-wide text-white/90 font-mono">Tarique Shaikh</a>
+
+      <div class="flex items-center gap-4 text-sm text-white/60">
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="index.html#work" class="hover:text-white transition">work</a>
+          <a href="projects.html" class="text-white">projects</a>
+          <a href="index.html#blog" class="hover:text-white transition">blog</a>
+        </nav>
+
+        <!-- Theme toggle -->
+        <button id="themeToggle" class="p-1 rounded-md hover:bg-white/10 transition" aria-label="Toggle theme">
+          <svg id="sunIcon" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m0-11.314L7.05 7.05m9.9 9.9l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" /></svg>
+          <svg id="moonIcon" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" /></svg>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="menuToggle" class="md:hidden p-1 rounded-md hover:bg-white/10 transition" aria-label="Toggle menu">
+          <svg id="menuIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          <svg id="closeIcon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile overlay -->
+  <div id="mobileOverlay" class="fixed inset-0 z-40 hidden bg-black/40 backdrop-blur-sm"></div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="fixed top-[64px] left-0 right-0 z-50 hidden bg-[#0b0d10]/95 backdrop-blur border-b border-white/10">
+    <nav class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80">
+      <a href="index.html#work" class="hover:text-white transition">work</a>
+      <a href="projects.html" class="hover:text-white transition">projects</a>
+      <a href="index.html#blog" class="hover:text-white transition">blog</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE INTRO -->
+<section class="max-w-[880px] mx-auto px-6 pt-20">
+  <h1 class="text-xl font-medium text-white/90 font-mono mb-4">projects</h1>
+  <p class="text-sm text-white/60 max-w-xl leading-6">
+    A collection of real-world products and smaller experiments I’ve built while learning and refining
+    my frontend skills. Each project focuses on clean UI, usability, and practical implementation.
+  </p>
+</section>
+
+<!-- MAJOR PROJECTS -->
+<section class="max-w-[880px] mx-auto px-6 mt-16">
+  <h2 class="text-lg font-medium text-white/90 mb-8 font-mono">featured / major</h2>
+
+  <div class="space-y-6">
+    <!-- Project Card -->
+
+    <!-- Project 1  -->
+
+    <a href="https://feglobaleducation.com" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 bg-black rounded-full w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">FE Global Education</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A production-ready education platform designed and built end-to-end by me. I handled UI design,
+          frontend development using Tailwind CSS, responsive layouts, performance optimization, and
+          deployment.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 2  -->
+
+    <a href="https://react-login-dashboard-tailwind.vercel.app/login" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/sportsweed.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Login Dashboard</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A React-based authentication dashboard with protected routes and clean UI patterns. Built to practice real-world login flows, component structure, and state handling while keeping the interface minimal and user-friendly.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+
+     <a href="https://sportsweed.netlify.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">SportsWeed</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+            A sports-focused content platform designed to deliver news and updates with clarity and speed. The project emphasizes readability, responsive design, and structured layouts suitable for content-heavy applications.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+ 
+
+
+    <!-- Project 4 -->
+
+     <a href="https://js-todo-tailwind.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Taskflow</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A minimal task management app focused on simplicity and usability. Built using vanilla JavaScript and Tailwind CSS to practice DOM manipulation, state updates, and clean UI interactions without external libraries.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+ 
+
+
+
+    <!-- Project 5 -->
+
+    <a href="https://js-age-in-days-css.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Age In Days</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A fun utility that calculates and displays a user’s age in days. This project helped reinforce JavaScript fundamentals, form handling, and presenting calculated results with a clean interface.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+       <!-- Project 6 -->
+
+    <a href="https://js-add-user-css.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Add Users</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+         A small data-entry application that allows users to add and display information dynamically. Built to practice form validation, state updates, and rendering data-driven UI components.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 7-->
+
+    <a href="https://js-weight-converter.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Weight Converter</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A simple unit conversion tool that converts weights between different units in real time. Focused on JavaScript logic, input handling, and instant UI feedback.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+
+    <!-- Project 8  -->
+
+
+    <a href="https://js-todo-list-css.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Todo App with Search Option</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A to-do list application with search functionality, designed to handle larger task lists efficiently. Built to practice filtering data, updating UI based on user input, and maintaining a clean structure.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Project 9  -->
+
+
+    <a href="https://contact-filter.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Contact Filter</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A contact management interface with real-time filtering. This project focuses on array methods, search logic, and building responsive layouts for data-heavy UI components.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+
+
+
+
+    <!-- Project 10 -->
+
+
+    <a href="https://todoo-js.vercel.app/" target="_blank"
+       class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 60px rgba(255,255,255,0.06);"></div>
+
+      <div class="relative flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <!-- <img src="./pics/logo.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
+          <h3 class="text-sm font-medium text-white">Todo App</h3>
+        </div>
+
+        <p class="text-sm text-white/60 leading-6 max-w-2xl">
+          A straightforward task management app built to strengthen core JavaScript concepts such as event handling, state updates, and dynamic rendering.
+        </p>
+
+        <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
+          <span class="rounded-md border border-white/10 px-2 py-1">Tailwind CSS</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">JavaScript</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Cloudflare</span>
+          <span class="rounded-md border border-white/10 px-2 py-1">Vercel</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- PRACTICE PROJECTS -->
+<section id="practice" class="max-w-[880px] mx-auto px-6 mt-20">
+  <h2 class="text-lg font-medium text-white/90 mb-4 font-mono">small & practice</h2>
+  <p class="text-sm text-white/60 max-w-xl mb-8">
+    Smaller projects and UI experiments created to practice layouts, interactions, and JavaScript
+    fundamentals.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <!-- Practice Card -->
+
+<!-- Project 1  -->
+     <a href="https://react-bg-changer-tailwind.vercel.app/" target="_blank"
+       class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 12px 30px rgba(255,255,255,0.05);"></div>
+      <div class="relative">
+        <h4 class="text-sm font-medium text-white">Background Changer</h4>
+        <p class="mt-1 text-xs text-white/50 leading-5">
+          An interactive utility that changes background colors dynamically. Built to practice event handling, state changes, and immediate visual feedback.
+        </p>
+      </div>
+    </a>
+
+    <!-- Project 2  -->
+
+    <a href="https://google-page-self.vercel.app/" target="_blank"
+       class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 12px 30px rgba(255,255,255,0.05);"></div>
+      <div class="relative">
+        <h4 class="text-sm font-medium text-white">Google Homepage Clone</h4>
+        <p class="mt-1 text-xs text-white/50 leading-5">
+            A pixel-accurate recreation of the Google homepage. This project focuses on layout precision, spacing, and visual hierarchy using HTML and Tailwind CSS.        </p>
+      </div>
+    </a>
+
+    <!-- Project 3  -->
+
+    <a href="https://myinfo-roan.vercel.app/" target="_blank"
+       class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 12px 30px rgba(255,255,255,0.05);"></div>
+      <div class="relative">
+        <h4 class="text-sm font-medium text-white">Info</h4>
+        <p class="mt-1 text-xs text-white/50 leading-5">
+A small experiment focused on structuring content and managing simple UI interactions while keeping the design minimal.        </p>
+      </div>
+    </a>
+
+    <!-- Project 4  -->
+
+    <a href="https://sportsweed2.netlify.app/" target="_blank"
+       class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 12px 30px rgba(255,255,255,0.05);"></div>
+      <div class="relative">
+        <h4 class="text-sm font-medium text-white">SportsWeed 2</h4>
+        <p class="mt-1 text-xs text-white/50 leading-5">
+An iteration of the SportsWeed concept, rebuilt to improve layout structure, responsiveness, and overall UI clarity based on earlier learnings.        </p>
+      </div>
+    </a>
+
+    <!-- Project 5  -->
+
+    <a href="https://gtgperfumes.vercel.app/" target="_blank"
+       class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 12px 30px rgba(255,255,255,0.05);"></div>
+      <div class="relative">
+        <h4 class="text-sm font-medium text-white">SportsWeed 2</h4>
+        <p class="mt-1 text-xs text-white/50 leading-5">
+            A basic counter application used to practice state management, button interactions, and clean UI updates.
+        </p>
+      </div>
+    </a>
+
+    <!-- Project 6  -->
+
+   <a href="https://react-counter-tailwind.vercel.app/" target="_blank"
+       class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-5 transition hover:border-white/20">
+      <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 12px 30px rgba(255,255,255,0.05);"></div>
+      <div class="relative">
+        <h4 class="text-sm font-medium text-white">Counter</h4>
+        <p class="mt-1 text-xs text-white/50 leading-5">
+            A basic counter application used to practice state management, button interactions, and clean UI updates.
+        </p>
+      </div>
+    </a>    
+
+   
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-32 mb-10">
+  <div class="max-w-[880px] mx-auto px-6">
+    <div class="flex items-center justify-center border-t border-white/10 pt-8">
+      <p class="text-xs text-white/40">© 2025 Tarique Shaikh</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuToggle');
+  const menuIcon = document.getElementById('menuIcon');
+  const closeIcon = document.getElementById('closeIcon');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+
+  function openMenu() {
+    mobileMenu.classList.remove('hidden');
+    mobileOverlay.classList.remove('hidden');
+    menuIcon.classList.add('hidden');
+    closeIcon.classList.remove('hidden');
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add('hidden');
+    mobileOverlay.classList.add('hidden');
+    menuIcon.classList.remove('hidden');
+    closeIcon.classList.add('hidden');
+  }
+
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    mobileMenu.classList.contains('hidden') ? openMenu() : closeMenu();
+  });
+
+  // CLICKING OUTSIDE 
+  document.addEventListener('click', (e) => {
+    if (
+      !mobileMenu.classList.contains('hidden') &&
+      !mobileMenu.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      closeMenu();
+    }
+  });
+
+  // Overlay click (extra safety)
+  mobileOverlay.addEventListener('click', closeMenu);
+
+    // Close on scroll (NEW)
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (!mobileMenu.classList.contains('hidden')) {
+      if (Math.abs(window.scrollY - lastScrollY) > 10) {
+        closeMenu();
+      }
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+
+<!-- Light Dark Mode  -->
+
+
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const sun = document.getElementById('sunIcon');
+  const moon = document.getElementById('moonIcon');
+
+  // persist theme
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('light');
+    sun.classList.add('hidden');
+    moon.classList.remove('hidden');
+  }
+
+  toggle.addEventListener('click', () => {
+    const isLight = document.documentElement.classList.toggle('light');
+    localStorage.theme = isLight ? 'light' : 'dark';
+    sun.classList.toggle('hidden');
+    moon.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

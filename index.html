@@ -26,9 +26,9 @@
     <div class="flex items-center gap-4 text-sm text-white/60">
       <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-6">
-        <a href="#work" class="hover:text-white transition">work</a>
-        <a href="#projects" class="hover:text-white transition">projects</a>
-        <a href="#blog" class="hover:text-white transition">blog</a>
+        <a href="#work" class=" hover:text-white transition">work</a>
+        <a href="#projects" class=" hover:text-white transition">projects</a>
+        <a href="#blog" class=" hover:text-white transition">blog</a>
       </nav>
 
       <!-- Theme toggle -->
@@ -76,30 +76,6 @@
 
     </div>
   </header>
-
-<script>
-  const toggle = document.getElementById('themeToggle');
-  const sun = document.getElementById('sunIcon');
-  const moon = document.getElementById('moonIcon');
-
-  // persist theme
-  if (localStorage.theme === 'light') {
-    document.documentElement.classList.add('light');
-    sun.classList.add('hidden');
-    moon.classList.remove('hidden');
-  }
-
-  toggle.addEventListener('click', () => {
-    const isLight = document.documentElement.classList.toggle('light');
-    localStorage.theme = isLight ? 'light' : 'dark';
-    sun.classList.toggle('hidden');
-    moon.classList.toggle('hidden');
-  });
-</script>
-
-
-
-
 
 
 
@@ -216,7 +192,7 @@
 <section id="work" class="max-w-[880px] mx-auto px-6 mt-22">
   <div class="flex items-center justify-between mb-8">
     <h3 class="text-lg font-medium text-white/90">work</h3>
-    <a href="#" class="text-sm text-white/50 hover:text-white transition">view all</a>
+    <a href="" class="text-sm text-white/50 hover:text-white transition">view all</a>
   </div>
 
   <!-- WORK CARD -->
@@ -334,7 +310,7 @@
   <!-- Major projects -->
   <div class="flex items-center justify-between mb-6">
     <h3 class="text-lg font-medium text-white/90">projects</h3>
-    <a href="projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
+    <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -386,7 +362,7 @@
   <!-- Small / practice -->
   <div class="flex items-center justify-between mb-6">
     <h4 class="text-sm font-medium text-white/70">small & practice</h4>
-    <a href="projects.html#practice" class="text-sm text-white/50 hover:text-white transition">view all</a>
+    <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
   </div>
 
    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -521,7 +497,27 @@
   });
 </script>
 
+<!-- Light Dark Mode -->
 
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const sun = document.getElementById('sunIcon');
+  const moon = document.getElementById('moonIcon');
+
+  // persist theme
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('light');
+    sun.classList.add('hidden');
+    moon.classList.remove('hidden');
+  }
+
+  toggle.addEventListener('click', () => {
+    const isLight = document.documentElement.classList.toggle('light');
+    localStorage.theme = isLight ? 'light' : 'dark';
+    sun.classList.toggle('hidden');
+    moon.classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>

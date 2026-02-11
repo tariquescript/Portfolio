@@ -28,10 +28,17 @@
   color: #0b0d10;
 }
 
+
 .light header {
   background-color: rgba(255, 255, 255, 0.8);
   border-color: rgba(0, 0, 0, 0.08);
+  
 }
+
+.light header a:hover{
+  color: #000000;
+}
+
 
 .light .border-white\/10 {
   border-color: rgba(0, 0, 0, 0.08);
@@ -92,5 +99,8 @@
 .light #mobileOverlay {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 
