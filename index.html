@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@vercel/geist@1.3.0/dist/font.css"
-/>
+ 
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tarique Shaikh</title>
   <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="./pics/me.webp" />
+
 </head>
 
-<body class="font-mono bg-[#0b0d10] text-[#e6e6eb] antialiased selection:bg-white/10">
+<body class=" bg-[#0b0d10] text-[#e6e6eb] antialiased selection:bg-white/10">
 
 
 
@@ -496,7 +495,7 @@
     mobileMenu.classList.contains('hidden') ? openMenu() : closeMenu();
   });
 
-  // CLICKING OUTSIDE (this is the missing part)
+  // CLICKING OUTSIDE 
   document.addEventListener('click', (e) => {
     if (
       !mobileMenu.classList.contains('hidden') &&

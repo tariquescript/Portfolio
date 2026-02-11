@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Geist Mono";
+  src: url("./fonts/GeistMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+}
+@layer base {
+  body {
+    letter-spacing: -0.01em;
+  }
+}
+
+
+
+
+
 /* LIGHT MODE */
 .light body {
   background-color: #ffffff;
@@ -70,3 +92,5 @@
 .light #mobileOverlay {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+
