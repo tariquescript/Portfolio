@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 
+
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tarique Shaikh</title>
   <link rel="stylesheet" href="./output.css" />
-    <link rel="icon" href="./pics/me.webp" />
+  <link rel="icon" href="./pics/me.webp" />
 
 </head>
 
@@ -15,69 +16,71 @@
 
 
 
-<!-- HEADER -->
-<header class="sticky top-0 z-50 bg-[#0b0d10]/80 backdrop-blur  ">
-    <div class="max-w-[880px]  mx-auto border-b border-white/10 " >
-        <div class=" mx-auto px-6 py-4 flex items-center justify-between">
-    <!-- LEFT: NAME -->
-    <span class="text-md tracking-wide text-white/90"> <a href="./index.html"> Tarique Shaikh </a>  </span>
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-[#0b0d10]/80 backdrop-blur  ">
+    <div class="max-w-[880px]  mx-auto border-b border-white/10 ">
+      <div class=" mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- LEFT: NAME -->
+        <span class="text-md tracking-wide text-white/90"> <a href="./index.html"> Tarique Shaikh </a> </span>
 
-    <!-- RIGHT: NAV + THEME -->
-    <div class="flex items-center gap-8 text-sm text-white/60">
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-10">
-        <a href="./index.html" class=" text-white transition">home</a>
+        <!-- RIGHT: NAV + THEME -->
+        <div class="flex items-center gap-8 text-sm text-white/60">
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex items-center gap-10">
+            <a href="./index.html" class=" text-white transition">home</a>
 
-        <a href="#work" class=" hover:text-white transition">work</a>
-        <a href="./projects.html" class=" hover:text-white transition">projects</a>
-        <a href="#blog" class=" hover:text-white transition">blog</a>
-      </nav>
+            <a href="#work" class=" hover:text-white transition">work</a>
+            <a href="./projects.html" class=" hover:text-white transition">projects</a>
+            <a href="#blog" class=" hover:text-white transition">blog</a>
+          </nav>
 
-      <!-- Theme toggle -->
-      <button id="themeToggle" aria-label="Toggle theme" class="p-1 rounded-md hover:bg-white/10 transition">
-        <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m0-11.314L7.05 7.05m9.9 9.9l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
-        </svg>
-        <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
-        </svg>
-      </button>
+          <!-- Theme toggle -->
+          <button id="themeToggle" aria-label="Toggle theme" class="p-1 rounded-md hover:bg-white/10 transition">
+            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m0-11.314L7.05 7.05m9.9 9.9l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+            </svg>
+          </button>
 
-      <!-- Hamburger / Close -->
-      <button id="menuToggle" class="md:hidden p-1 rounded-md hover:bg-white/10 transition" aria-label="Toggle menu">
-        <!-- Hamburger icon -->
-        <svg id="menuIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <!-- Close icon -->
-        <svg id="closeIcon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-  </div>
+          <!-- Hamburger / Close -->
+          <button id="menuToggle" class="md:hidden p-1 rounded-md hover:bg-white/10 transition"
+            aria-label="Toggle menu">
+            <!-- Hamburger icon -->
+            <svg id="menuIcon" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Close icon -->
+            <svg id="closeIcon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
 
-  <!-- Mobile menu overlay -->
-  <div id="mobileOverlay" class="fixed inset-0 z-40 hidden bg-black/40 ">
-    
-  </div>
+      <!-- Mobile menu overlay -->
+      <div id="mobileOverlay" class="fixed inset-0 z-40 hidden bg-black/40 ">
 
-  <!-- Mobile menu (overlay, not pushing content) -->
-  <div id="mobileMenu"
-      class="fixed top-[64px] left-0 right-0 z-50 hidden
+      </div>
+
+      <!-- Mobile menu (overlay, not pushing content) -->
+      <div id="mobileMenu" class="fixed top-[64px] left-0 right-0 z-50 hidden
          bg-[#0b0d10]/95 backdrop-blur border-b border-white/10">
 
-      <nav class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80">
+        <nav class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80">
 
-        <a href="#work" class="mobile-link text-white transition">home</a>
-        
-        <a href="#work" class="mobile-link hover:text-white transition">work</a>
-        <a href="./projects.html" class="mobile-link hover:text-white transition">projects</a>
-        <a href="#blog" class="mobile-link hover:text-white transition">blog</a>
-      </nav>
-  </div>
+          <a href="#work" class="mobile-link text-white transition">home</a>
+
+          <a href="#work" class="mobile-link hover:text-white transition">work</a>
+          <a href="./projects.html" class="mobile-link hover:text-white transition">projects</a>
+          <a href="#blog" class="mobile-link hover:text-white transition">blog</a>
+        </nav>
+      </div>
 
     </div>
   </header>
@@ -86,156 +89,162 @@
 
 
 
-<!-- HERO / ABOUT -->
-<!-- HERO / ABOUT -->
-<section class="max-w-[880px] mx-auto px-6 pt-24 max-sm:pt-10">
-  <div class="flex flex-col-reverse max-sm:items-center max-sm:justify-center md:flex-row md:items-start md:justify-between gap-10">
-
-   
-
-    <!-- TEXT -->
-    <div class="space-y-8 text-white/80 max-w-2xl">
-
-
-  
-
-    <p class="text-sm text-white/60">hi, i'm tarique.</p>
-       
-    <p class="text-base leading-7 max-w-xl">
-      i build web interfaces that feel fast, clean, and reliable. i've spent the last few years
-      working with modern frontend stacks, shipping responsive products, and deploying real-world
-      applications.
-    </p>
-
-    <p class="text-base leading-7 max-w-xl">
-      i enjoy breaking problems down, refining UI details, and building systems that scale
-      without feeling heavy.
-    </p>
-    
-
-  
-
-    <div class="pt-2">
-      <p class="text-sm text-white/60 mb-2">other things about me:</p>
-      <ul class="space-y-1 text-sm">
-        <li>i watch a lot of football.</li>
-        <li>i listen to music while working.</li>
-        <li>i’m curious about space and how things work beyond earth.</li>
-      </ul>
-    </div>
-    
-
-    <!-- CTA BUTTONS -->
-    <div class="flex items-center gap-4 pt-3">
-      <a href="./TariqueResume.pdf" class="group inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 text-sm transition duration-300 hover:bg-white/5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12)] hover:backdrop-blur">
-        <svg class="w-6 h-6 text-white/70 group-hover:text-white transition transform             group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v10m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
-        </svg>
-        
-        <span>resume</span>
-      </a>
-     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tariquescript@gmail.com" class="group inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm transition duration-300 hover:bg-white/90 hover:shadow-[0_8px_30px_rgba(255,255,255,0.25)]">
-        <svg class="w-4 h-4 text-black/70 group-hover:text-black transition transform group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
-        </svg>
-        <span>get in touch</span>
-      </a>
-    </div>
-
-    <!-- SOCIALS -->
-    <div class="flex items-center gap-7 pt-1 text-white/60">
-      <!-- GitHub -->
-      <a href="https://github.com/tariquescript" target="_blank" aria-label="GitHub"
-         class="text-white/90 hover:text-white transition transform hover:-translate-y-0.5 hover:scale-110">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.56v-2.1c-3.2.7-3.87-1.39-3.87-1.39-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.19-3.08-.12-.3-.52-1.52.11-3.16 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.64.23 2.86.11 3.16.74.8 1.18 1.82 1.18 3.08 0 4.43-2.69 5.41-5.25 5.7.41.35.77 1.04.77 2.1v3.1c0 .31.21.67.79.56A11.52 11.52 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5z"/>
-        </svg>
-      </a>
-
-      <!-- X / Twitter -->
-      <a href="https://x.com/AFellow10" target="_blank" aria-label="X"
-         class="text-white/90 hover:text-white transition transform hover:-translate-y-0.5 hover:scale-110">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M18.36 2H21l-6.46 7.39L22 22h-6.2l-4.86-6.4L5.6 22H3l6.9-7.89L2 2h6.34l4.4 5.82L18.36 2z"/>
-        </svg>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/tariquedev/" target="_blank" aria-label="LinkedIn"
-         class=" text-white/90 hover: transition transform hover:-translate-y-0.5 hover:scale-110">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05v6.36h-4v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9v-12z"/>
-        </svg>
-      </a>
-    </div>
-
-  </div>
-     <!-- PROFILE IMAGE (RIGHT) -->
-  <!-- IMAGE WRAPPER FOR SHARPNESS -->
-  <div class="h-48 w-48 max-sm:h-60 max-sm:w-60 rounded-full overflow-hidden ring-1 ring-white/10 bg-black">
-    <img
-      src="./pics/me.webp"
-      alt="Tarique Shaikh"
-      loading="eager"
-      decoding="async"
-      class="h-full w-full object-cover object-top"
-    />
-  </div>
+  <!-- HERO / ABOUT -->
+  <!-- HERO / ABOUT -->
+  <section class="max-w-[880px] mx-auto px-6 pt-24 max-sm:pt-10">
+    <div
+      class="flex flex-col-reverse max-sm:items-center max-sm:justify-center md:flex-row md:items-start md:justify-between gap-10">
 
 
 
-    </div>
-    
-   
- </div>
-  
-</section>
+      <!-- TEXT -->
+      <div class="space-y-8 text-white/80 max-w-2xl">
 
 
 
-<!-- WORK -->
-<section id="work" class="max-w-[880px] mx-auto px-6 mt-22">
-  <div class="flex items-center justify-between mb-8">
-    <h3 class="text-lg font-medium text-white/90">work</h3>
-    <a href="" class="text-sm text-white/50 hover:text-white transition">view all</a>
-  </div>
 
-  <!-- WORK CARD -->
-  <a href="https://feglobaleducation.com" target="_blank"
-     class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition duration-300 hover:border-white/20">
+        <p class="text-sm text-white/60">hi, i'm tarique.</p>
 
-    <!-- Glow on hover -->
-    <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"
-         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.15), 0 10px 40px rgba(255,255,255,0.08);"></div>
+        <p class="text-base leading-7 max-w-xl">
+          i build web interfaces that feel fast, clean, and reliable. i've spent the last few years
+          working with modern frontend stacks, shipping responsive products, and deploying real-world
+          applications.
+        </p>
 
-    <div class="relative flex items-center justify-between gap-4">
-      <!-- LEFT -->
-      <div class="flex items-center gap-4">
-        <!-- LOGO -->
-        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-          <img src="./pics/logo.png" alt="FE Global Education" class=" bg-black rounded-4xl h-6 w-6 object-contain" />
+        <p class="text-base leading-7 max-w-xl">
+          i enjoy breaking problems down, refining UI details, and building systems that scale
+          without feeling heavy.
+        </p>
+
+
+
+
+        <div class="pt-2">
+          <p class="text-sm text-white/60 mb-2">other things about me:</p>
+          <ul class="space-y-1 text-sm">
+            <li>i watch a lot of football.</li>
+            <li>i listen to music while working.</li>
+            <li>i’m curious about space and how things work beyond earth.</li>
+          </ul>
         </div>
 
-        <div>
-          <p class="text-sm font-medium text-white">fe global education</p>
-          <p class="text-xs text-white/50">frontend engineer</p>
+
+        <!-- CTA BUTTONS -->
+        <div class="flex items-center gap-4 pt-3">
+          <a href="./TariqueResume.pdf"
+            class="group inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 text-sm transition duration-300 hover:bg-white/5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12)] hover:backdrop-blur">
+            <svg
+              class="w-6 h-6 text-white/70 group-hover:text-white transition transform             group-hover:-translate-y-0.5"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v10m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+            </svg>
+
+            <span>resume</span>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tariquescript@gmail.com"
+            class="group inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm transition duration-300 hover:bg-white/90 hover:shadow-[0_8px_30px_rgba(255,255,255,0.25)]">
+            <svg class="w-4 h-4 text-black/70 group-hover:text-black transition transform group-hover:-translate-y-0.5"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
+            </svg>
+            <span>get in touch</span>
+          </a>
         </div>
-      </div>    
 
-      <!-- RIGHT -->
-      <span class="text-xs text-white/40">2024 — present</span>
+        <!-- SOCIALS -->
+        <div class="flex items-center gap-7 pt-1 text-white/60">
+          <!-- GitHub -->
+          <a href="https://github.com/tariquescript" target="_blank" aria-label="GitHub"
+            class="text-white/90 hover:text-white transition transform hover:-translate-y-0.5 hover:scale-110">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.56v-2.1c-3.2.7-3.87-1.39-3.87-1.39-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.28 1.19-3.08-.12-.3-.52-1.52.11-3.16 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.64.23 2.86.11 3.16.74.8 1.18 1.82 1.18 3.08 0 4.43-2.69 5.41-5.25 5.7.41.35.77 1.04.77 2.1v3.1c0 .31.21.67.79.56A11.52 11.52 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5z" />
+            </svg>
+          </a>
+
+          <!-- X / Twitter -->
+          <a href="https://x.com/AFellow10" target="_blank" aria-label="X"
+            class="text-white/90 hover:text-white transition transform hover:-translate-y-0.5 hover:scale-110">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.36 2H21l-6.46 7.39L22 22h-6.2l-4.86-6.4L5.6 22H3l6.9-7.89L2 2h6.34l4.4 5.82L18.36 2z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/tariquedev/" target="_blank" aria-label="LinkedIn"
+            class=" text-white/90 hover: transition transform hover:-translate-y-0.5 hover:scale-110">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05v6.36h-4v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9v-12z" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+      <!-- PROFILE IMAGE (RIGHT) -->
+      <!-- IMAGE WRAPPER FOR SHARPNESS -->
+      <div class="h-48 w-48 max-sm:h-60 max-sm:w-60 rounded-full overflow-hidden ring-1 ring-white/10 bg-black">
+        <img src="./pics/me.webp" alt="Tarique Shaikh" loading="eager" decoding="async"
+          class="h-full w-full object-cover object-top" />
+      </div>
+
+
+
     </div>
-  </a>
-</section>
+
+
+    </div>
+
+  </section>
 
 
 
-<!-- GITHUB -->
-<!-- GITHUB -->
-<!-- GITHUB -->
-<!-- GITHUB -->
- 
-<!-- <section class="max-w-[880px] mx-auto px-6 mt-32">
+  <!-- WORK -->
+  <section id="work" class="max-w-[880px] mx-auto px-6 mt-22">
+    <div class="flex items-center justify-between mb-8">
+      <h3 class="text-lg font-medium text-white/90">work</h3>
+      <a href="" class="text-sm text-white/50 hover:text-white transition">view all</a>
+    </div>
+
+    <!-- WORK CARD -->
+    <a href="https://feglobaleducation.com" target="_blank"
+      class="group relative block rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition duration-300 hover:border-white/20">
+
+      <!-- Glow on hover -->
+      <div
+        class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"
+        style="box-shadow: 0 0 0 1px rgba(255,255,255,0.15), 0 10px 40px rgba(255,255,255,0.08);"></div>
+
+      <div class="relative flex items-center justify-between gap-4">
+        <!-- LEFT -->
+        <div class="flex items-center gap-4">
+          <!-- LOGO -->
+          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
+            <img src="./pics/logo.png" alt="FE Global Education" class=" bg-black rounded-4xl h-6 w-6 object-contain" />
+          </div>
+
+          <div>
+            <p class="text-sm font-medium text-white">fe global education</p>
+            <p class="text-xs text-white/50">frontend engineer</p>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <span class="text-xs text-white/40">2024 — present</span>
+      </div>
+    </a>
+  </section>
+
+
+
+  <!-- GITHUB -->
+  <!-- GITHUB -->
+  <!-- GITHUB -->
+  <!-- GITHUB -->
+
+  <!-- <section class="max-w-[880px] mx-auto px-6 mt-32">
   <h3 class="text-lg font-medium text-white/90 mb-6">github</h3>
 
   <div class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-4 transition hover:border-white/20">
@@ -265,264 +274,409 @@
 
 
 
-<!-- STACK -->
-<section class="max-w-[880px] mx-auto px-6 mt-16">
-  <h3 class="text-lg font-medium text-white/90 mb-8">stack</h3>
+  <!-- STACK -->
+  <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-    <!-- Tailwind CSS -->
-    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="h-6 w-6" />
-      <span class="text-sm text-white/80 transition group-hover:text-white">Tailwind CSS</span>
-    </div>
-
-    <!-- JavaScript -->
-    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="h-6 w-6" />
-      <span class="text-sm text-white/80 transition group-hover:text-white">JavaScript</span>
-    </div>
-
-    <!-- React -->
-    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="h-6 w-6" />
-      <span class="text-sm text-white/80 transition group-hover:text-white">React</span>
-    </div>
-
-    <!-- Vercel -->
-    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" class="h-6 w-6 invert" />
-      <span class="text-sm text-white/80 transition group-hover:text-white">Vercel</span>
-    </div>
-
-    <!-- Netlify -->
-    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" class="h-6 w-6" />
-      <span class="text-sm text-white/80 transition group-hover:text-white">Netlify</span>
-    </div>
-
-    <!-- Cloudflare -->
-    <div class="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" alt="Cloudflare" class="h-6 w-6" />
-      <span class="text-sm text-white/80 transition group-hover:text-white">Cloudflare</span>
-    </div>
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<!-- PROJECTS (HOME) -->
-<section id="projects" class="max-w-[880px] mx-auto px-6 mt-25">
-  <!-- Major projects -->
-  <div class="flex items-center justify-between mb-6">
-    <h3 class="text-lg font-medium text-white/90">projects</h3>
-    <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
-  </div>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-    <!-- Major card -->
-     <!-- Project-1  -->
-    <a href="https://react-login-dashboard-tailwind.vercel.app/" target="_blank"
-       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
-      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
-           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
-      <div class="relative">
-        <p class="text-sm font-medium text-white">LOGIN DASHBOARD</p>
-        <p class="mt-1 text-xs text-white/50">Authentication-based React admin dashboard</p>
-      </div>
-    </a>
-<!-- Project 2  -->
-    <a href="https://sportsweed.netlify.app/" target="_blank"
-       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
-      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
-           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
-      <div class="relative">
-        <p class="text-sm font-medium text-white">SPORTS WEED</p>
-        <p class="mt-1 text-xs text-white/50">Your everyday sports news and stats</p>
-      </div>
-    </a>
-<!-- Project 3  -->
-    <a href="https://js-todo-tailwind.vercel.app/" target="_blank"
-       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
-      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
-           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
-      <div class="relative">
-        <p class="text-sm font-medium text-white">TASKFLOW</p>
-        <p class="mt-1 text-xs text-white/50">Minimal to-do manager with clean UI</p>
-      </div>
-    </a>
-
-    <a href="https://js-age-in-days-css.vercel.app/" target="_blank"
-       class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
-      <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
-           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
-      <div class="relative">
-        <p class="text-sm font-medium text-white">AGE IN DAYS</p>
-        <p class="mt-1 text-xs text-white/50">Discover your age expressed in days</p>
-      </div>
-    </a>
-
-    <!-- placeholder majors -->
-     </div>
-
-  <!-- Small / practice -->
-  <div class="flex items-center justify-between mb-6">
-    <h4 class="text-sm font-medium text-white/70">small & practice</h4>
-    <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
-  </div>
-
-   <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-  <!-- small project card -->
-
-   <a href="https://react-bg-changer-tailwind.vercel.app/" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
-    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
-         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
-    <span class="relative">background changer</span>
-  </a>
-
-  <a href="https://sportsweed2.netlify.app/" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
-    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
-         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
-    <span class="relative">sportsweed 2</span>
-  </a>
-
-  <a href="https://react-counter-tailwind.vercel.app/" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
-    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
-         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
-    <span class="relative">counter</span>
-  </a>
-
-  <a href="https://google-page-self.vercel.app/" class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
-    <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
-         style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
-    <span class="relative">google homepage clone</span>
-  </a>
-</section>
-
-
-<!-- BLOGS -->
-<section id="blog" class="max-w-[880px] mx-auto px-6 mt-25">
-  <div class="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6">
-    <h3 class="text-lg font-medium text-white/90 mb-4">writing</h3>
-    <p class="text-sm text-white/60 max-w-xl leading-6">
-      I’ll be sharing blogs soon — mostly about frontend engineering, UI decisions,
-      performance, and lessons learned while building real products.
-    </p>
-    <p class="mt-4 text-xs text-white/40">coming soon</p>
-  </div>
-</section>
-
-
-
-<!-- FOOTER -->
-<footer class="mt-20 mb-10">
-  <div class="max-w-[880px] mx-auto px-6">
-    <div class="flex items-center justify-center border-t border-white/10 pt-8">
-      <p class="text-xs text-white/40 text-center">
-        © 2025 Tarique Shaikh
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  const themeToggleBtn = document.getElementById('themeToggle');
-  const sunIcon = document.getElementById('sunIcon');
-  const moonIcon = document.getElementById('moonIcon');
-
-  if (!themeToggleBtn || !sunIcon || !moonIcon) return;
-
-  // restore theme
-  if (localStorage.theme === 'light') {
-    document.documentElement.classList.add('light');
-    sunIcon.classList.add('hidden');
-    moonIcon.classList.remove('hidden');
-  }
-
-  themeToggleBtn.addEventListener('click', () => {
-    const isLight = document.documentElement.classList.toggle('light');
-    localStorage.theme = isLight ? 'light' : 'dark';
-    sunIcon.classList.toggle('hidden');
-    moonIcon.classList.toggle('hidden');
-  });
-</script>
-
-
-
-<!-- Menu -->
-
-<script>
-  const menuBtn = document.getElementById('menuToggle');
-  const menuIcon = document.getElementById('menuIcon');
-  const closeIcon = document.getElementById('closeIcon');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const mobileOverlay = document.getElementById('mobileOverlay');
-
-  function openMenu() {
-    mobileMenu.classList.remove('hidden');
-    mobileOverlay.classList.remove('hidden');
-    menuIcon.classList.add('hidden');
-    closeIcon.classList.remove('hidden');
-  }
-
-  function closeMenu() {
-    mobileMenu.classList.add('hidden');
-    mobileOverlay.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-    closeIcon.classList.add('hidden');
-  }
-
-  menuBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    mobileMenu.classList.contains('hidden') ? openMenu() : closeMenu();
-  });
-
-  // CLICKING OUTSIDE 
-  document.addEventListener('click', (e) => {
-    if (
-      !mobileMenu.classList.contains('hidden') &&
-      !mobileMenu.contains(e.target) &&
-      !menuBtn.contains(e.target)
-    ) {
-      closeMenu();
-    }
-  });
-
-  // Overlay click (extra safety)
-  mobileOverlay.addEventListener('click', closeMenu);
-
-    // Close on scroll (NEW)
-  let lastScrollY = window.scrollY;
-  window.addEventListener('scroll', () => {
-    if (!mobileMenu.classList.contains('hidden')) {
-      if (Math.abs(window.scrollY - lastScrollY) > 10) {
-        closeMenu();
+      100% {
+        transform: translateX(-50%);
       }
     }
-    lastScrollY = window.scrollY;
-  });
-</script>
 
-<!-- Light Dark Mode -->
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 22s linear infinite;
+    }
 
-<script>
-  const toggle = document.getElementById('themeToggle');
-  const sun = document.getElementById('sunIcon');
-  const moon = document.getElementById('moonIcon');
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
 
-  // persist theme
-  if (localStorage.theme === 'light') {
-    document.documentElement.classList.add('light');
-    sun.classList.add('hidden');
-    moon.classList.remove('hidden');
-  }
+    .marquee-wrapper {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    }
+  </style>
 
-  toggle.addEventListener('click', () => {
-    const isLight = document.documentElement.classList.toggle('light');
-    localStorage.theme = isLight ? 'light' : 'dark';
-    sun.classList.toggle('hidden');
-    moon.classList.toggle('hidden');
-  });
-</script>
+  <section class="max-w-[880px] mx-auto px-6 mt-16">
+    <h3 class="text-lg font-medium text-white/90 mb-8">stack</h3>
+
+    <div class="marquee-wrapper">
+      <div class="marquee-track gap-4">
+
+        <!-- === SET 1 === -->
+        <!-- Tailwind CSS -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            alt="Tailwind CSS" class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Tailwind CSS</span>
+        </div>
+        <!-- JavaScript -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript" class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">JavaScript</span>
+        </div>
+        <!-- React -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">React</span>
+        </div>
+        <!-- HTML5 -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">HTML5</span>
+        </div>
+        <!-- CSS3 -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">CSS3</span>
+        </div>
+        <!-- Git -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Git</span>
+        </div>
+        <!-- Vercel -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"
+            class="h-5 w-5 invert" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Vercel</span>
+        </div>
+        <!-- Netlify -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Netlify</span>
+        </div>
+        <!-- Cloudflare -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
+            alt="Cloudflare" class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Cloudflare</span>
+        </div>
+        <!-- GitHub -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+            class="h-5 w-5 invert" />
+          <span class="text-sm text-white/80 whitespace-nowrap">GitHub</span>
+        </div>
+
+        <!-- === SET 2 (duplicate for seamless loop) === -->
+        <!-- Tailwind CSS -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+            alt="Tailwind CSS" class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Tailwind CSS</span>
+        </div>
+        <!-- JavaScript -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript" class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">JavaScript</span>
+        </div>
+        <!-- React -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">React</span>
+        </div>
+        <!-- HTML5 -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">HTML5</span>
+        </div>
+        <!-- CSS3 -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">CSS3</span>
+        </div>
+        <!-- Git -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Git</span>
+        </div>
+        <!-- Vercel -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"
+            class="h-5 w-5 invert" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Vercel</span>
+        </div>
+        <!-- Netlify -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify"
+            class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Netlify</span>
+        </div>
+        <!-- Cloudflare -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
+            alt="Cloudflare" class="h-5 w-5" />
+          <span class="text-sm text-white/80 whitespace-nowrap">Cloudflare</span>
+        </div>
+        <!-- GitHub -->
+        <div
+          class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+            class="h-5 w-5 invert" />
+          <span class="text-sm text-white/80 whitespace-nowrap">GitHub</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <!-- PROJECTS (HOME) -->
+  <section id="projects" class="max-w-[880px] mx-auto px-6 mt-25">
+    <!-- Major projects -->
+    <div class="flex items-center justify-between mb-6">
+      <h3 class="text-lg font-medium text-white/90">projects</h3>
+      <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+      <!-- Major card -->
+      <!-- Project-1  -->
+      <a href="https://react-login-dashboard-tailwind.vercel.app/" target="_blank"
+        class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+        <div class="relative">
+          <p class="text-sm font-medium text-white">LOGIN DASHBOARD</p>
+          <p class="mt-1 text-xs text-white/50">Authentication-based React admin dashboard</p>
+        </div>
+      </a>
+      <!-- Project 2  -->
+      <a href="https://sportsweed.netlify.app/" target="_blank"
+        class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+        <div class="relative">
+          <p class="text-sm font-medium text-white">SPORTS WEED</p>
+          <p class="mt-1 text-xs text-white/50">Your everyday sports news and stats</p>
+        </div>
+      </a>
+      <!-- Project 3  -->
+      <a href="https://js-todo-tailwind.vercel.app/" target="_blank"
+        class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+        <div class="relative">
+          <p class="text-sm font-medium text-white">TASKFLOW</p>
+          <p class="mt-1 text-xs text-white/50">Minimal to-do manager with clean UI</p>
+        </div>
+      </a>
+
+      <a href="https://js-age-in-days-css.vercel.app/" target="_blank"
+        class="group relative rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-5 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 20px 50px rgba(255,255,255,0.06);"></div>
+        <div class="relative">
+          <p class="text-sm font-medium text-white">AGE IN DAYS</p>
+          <p class="mt-1 text-xs text-white/50">Discover your age expressed in days</p>
+        </div>
+      </a>
+
+      <!-- placeholder majors -->
+    </div>
+
+    <!-- Small / practice -->
+    <div class="flex items-center justify-between mb-6">
+      <h4 class="text-sm font-medium text-white/70">small & practice</h4>
+      <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <!-- small project card -->
+
+      <a href="https://react-bg-changer-tailwind.vercel.app/"
+        class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+        <span class="relative">background changer</span>
+      </a>
+
+      <a href="https://sportsweed2.netlify.app/"
+        class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+        <span class="relative">sportsweed 2</span>
+      </a>
+
+      <a href="https://react-counter-tailwind.vercel.app/"
+        class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+        <span class="relative">counter</span>
+      </a>
+
+      <a href="https://google-page-self.vercel.app/"
+        class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
+        <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
+          style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
+        <span class="relative">google homepage clone</span>
+      </a>
+  </section>
+
+
+  <!-- BLOGS -->
+  <section id="blog" class="max-w-[880px] mx-auto px-6 mt-25">
+    <div class="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6">
+      <h3 class="text-lg font-medium text-white/90 mb-4">writing</h3>
+      <p class="text-sm text-white/60 max-w-xl leading-6">
+        I’ll be sharing blogs soon — mostly about frontend engineering, UI decisions,
+        performance, and lessons learned while building real products.
+      </p>
+      <p class="mt-4 text-xs text-white/40">coming soon</p>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="mt-20 mb-10">
+    <div class="max-w-[880px] mx-auto px-6">
+      <div class="flex items-center justify-center border-t border-white/10 pt-8">
+        <p class="text-xs text-white/40 text-center">
+          © 2025 Tarique Shaikh
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+
+    if (!themeToggleBtn || !sunIcon || !moonIcon) return;
+
+    // restore theme
+    if (localStorage.theme === 'light') {
+      document.documentElement.classList.add('light');
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      localStorage.theme = isLight ? 'light' : 'dark';
+      sunIcon.classList.toggle('hidden');
+      moonIcon.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+  <!-- Menu -->
+
+  <script>
+    const menuBtn = document.getElementById('menuToggle');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+
+    function openMenu() {
+      mobileMenu.classList.remove('hidden');
+      mobileOverlay.classList.remove('hidden');
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.add('hidden');
+      mobileOverlay.classList.add('hidden');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.contains('hidden') ? openMenu() : closeMenu();
+    });
+
+    // CLICKING OUTSIDE 
+    document.addEventListener('click', (e) => {
+      if (
+        !mobileMenu.classList.contains('hidden') &&
+        !mobileMenu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+      ) {
+        closeMenu();
+      }
+    });
+
+    // Overlay click (extra safety)
+    mobileOverlay.addEventListener('click', closeMenu);
+
+    // Close on scroll (NEW)
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (!mobileMenu.classList.contains('hidden')) {
+        if (Math.abs(window.scrollY - lastScrollY) > 10) {
+          closeMenu();
+        }
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+
+  <!-- Light Dark Mode -->
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const sun = document.getElementById('sunIcon');
+    const moon = document.getElementById('moonIcon');
+
+    // persist theme
+    if (localStorage.theme === 'light') {
+      document.documentElement.classList.add('light');
+      sun.classList.add('hidden');
+      moon.classList.remove('hidden');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      localStorage.theme = isLight ? 'light' : 'dark';
+      sun.classList.toggle('hidden');
+      moon.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
+
 </html>
