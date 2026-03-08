@@ -1,8 +1,8 @@
 
 const texts = [
   "hi, i'm tarique.",
-  "Frontend developer.",
-  "React developer."
+  "frontend developer.",
+  "react developer."
 ];
 
 let textIndex = 0;
