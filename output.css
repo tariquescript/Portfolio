@@ -224,8 +224,17 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
@@ -265,9 +274,6 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
-  }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
   }
   .block {
     display: block;
@@ -894,44 +900,9 @@
       }
     }
   }
-  .max-sm\:ml-2 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 2);
-    }
-  }
-  .max-sm\:ml-4 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 4);
-    }
-  }
-  .max-sm\:ml-6 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 6);
-    }
-  }
-  .max-sm\:ml-8 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 8);
-    }
-  }
-  .max-sm\:ml-10 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 10);
-    }
-  }
-  .max-sm\:ml-12 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 12);
-    }
-  }
   .max-sm\:ml-12\.5 {
     @media (width < 40rem) {
       margin-left: calc(var(--spacing) * 12.5);
-    }
-  }
-  .max-sm\:ml-13 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 13);
     }
   }
   .max-sm\:h-60 {
@@ -969,9 +940,34 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-  .md\:block {
+  .md\:mt-0\.5 {
     @media (width >= 48rem) {
-      display: block;
+      margin-top: calc(var(--spacing) * 0.5);
+    }
+  }
+  .md\:mt-1 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 1);
+    }
+  }
+  .md\:mt-2 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:mt-5 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:mt-\[2px\] {
+    @media (width >= 48rem) {
+      margin-top: 2px;
+    }
+  }
+  .min-md\:mt-0\.5 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0.5);
     }
   }
   .md\:flex {
