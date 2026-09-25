@@ -1,17 +1,24 @@
-
 const texts = [
   "hi, i'm tarique.",
   "frontend developer.",
   "react developer."
 ];
 
+const element = document.getElementById("typewriter");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
 let textIndex = 0;
 let charIndex = 0;
 let deleting = false;
+let timer = null;
 
-const element = document.getElementById("typewriter");
+function schedule(delay) {
+  clearTimeout(timer);
+  timer = setTimeout(typeEffect, delay);
+}
 
 function typeEffect() {
+  if (document.hidden) return;
   const currentText = texts[textIndex];
 
   if (!deleting) {
@@ -20,7 +27,7 @@ function typeEffect() {
 
     if (charIndex === currentText.length) {
       deleting = true;
-      setTimeout(typeEffect, 1200); // pause before deleting
+      schedule(1200); // pause before deleting
       return;
     }
   } else {
@@ -33,8 +40,25 @@ function typeEffect() {
     }
   }
 
-  const speed = deleting ? 50 : 90;
-  setTimeout(typeEffect, speed);
+  schedule(deleting ? 50 : 90);
 }
 
-typeEffect();
+function start() {
+  if (!element) return;
+
+  if (reduceMotion.matches) {
+    clearTimeout(timer);
+    element.textContent = texts[0];
+    return;
+  }
+
+  schedule(0);
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) clearTimeout(timer);
+  else start();
+});
+
+reduceMotion.addEventListener("change", start);
+start();

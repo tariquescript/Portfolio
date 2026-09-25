@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
+/* Variable Geist Mono — one file serves both 400 and 500 */
 @font-face {
   font-family: "Geist Mono";
-  src: url("./fonts/GeistMono-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("./fonts/GeistMono.woff2") format("woff2");
+  font-weight: 400 500;
+  font-style: normal;
   font-display: swap;
+}
+
+@theme {
+  --default-transition-duration: 220ms;
+  --default-transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 @layer base {
   html {
     font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-gutter: stable;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }
 @layer base {
   body {
     letter-spacing: -0.01em;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* sticky header would otherwise cover the top of an anchored section */
+  section[id],
+  :target {
+    scroll-margin-top: 5.5rem;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.55);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  .light :focus-visible {
+    outline-color: rgba(0, 0, 0, 0.45);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
+  }
+
+  .light * {
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.14);
+    background-clip: content-box;
+    border: 3px solid transparent;
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.26);
+    background-clip: content-box;
+  }
+
+  .light ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.18);
+    background-clip: content-box;
+  }
+
+  .light ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+    background-clip: content-box;
   }
 }
 
-
-
-
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 /* LIGHT MODE */
 .light body {
@@ -32,7 +115,7 @@
 .light header {
   background-color: rgba(255, 255, 255, 0.8);
   border-color: rgba(0, 0, 0, 0.08);
-  
+
 }
 
 .light header a:hover{
@@ -105,8 +188,13 @@
 
 
 #typewriter::after{
-   content: "█";
+  content: "";
+  display: inline-block;
+  width: 0.58em;
+  height: 1.05em;
   margin-left: 4px;
+  vertical-align: -0.18em;
+  background-color: currentColor;
   animation: blink 1s infinite;
 }
 

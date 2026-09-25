@@ -6,9 +6,30 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarique Shaikh</title>
+
+  <link rel="preload" href="./fonts/GeistMono.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./pics/me.webp" as="image" fetchpriority="high" />
+
+  <script>
+    try {
+      if (localStorage.theme === 'light') document.documentElement.classList.add('light');
+    } catch (e) {}
+  </script>
+
   <link rel="stylesheet" href="./output.css" />
   <link rel="icon" href="./pics/me.webp" />
+
+  <title>Tarique Shaikh — Frontend Developer</title>
+  <meta name="description"
+    content="Frontend developer building fast, clean, reliable web interfaces with React, Tailwind CSS, and modern JavaScript." />
+  <meta name="theme-color" content="#0b0d10" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tarique Shaikh — Frontend Developer" />
+  <meta property="og:description"
+    content="Frontend developer building fast, clean, reliable web interfaces with React, Tailwind CSS, and modern JavaScript." />
+  <meta property="og:image" content="./pics/me.webp" />
+  <meta name="twitter:card" content="summary" />
 
 </head>
 
@@ -186,7 +207,7 @@
       <!-- PROFILE IMAGE (RIGHT) -->
       <!-- IMAGE WRAPPER FOR SHARPNESS -->
       <div class="h-48 w-48 max-sm:h-60 max-sm:w-60 rounded-full overflow-hidden ring-1 ring-white/10 bg-black">
-        <img src="./pics/me.webp" alt="Tarique Shaikh" loading="eager" decoding="async"
+        <img src="./pics/me.webp" alt="Tarique Shaikh" width="490" height="464" loading="eager" fetchpriority="high" decoding="async"
           class="h-full w-full object-cover object-top" />
       </div>
 
@@ -222,7 +243,7 @@
         <div class="flex items-center gap-4">
           <!-- LOGO -->
           <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-black">
-            <img src="./pics/logo.png" alt="FE Global Education" class="rounded-4xl h-10 w-10 object-contain" />
+            <img src="./pics/logo.webp" alt="FE Global Education" width="120" height="120" loading="lazy" decoding="async" class="rounded-4xl h-10 w-10 object-contain" />
           </div>
 
           <div class="">
@@ -249,7 +270,7 @@
         <div class="flex items-center gap-4">
           <!-- LOGO -->
           <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-black">
-            <img src="./pics/greenlogo.jpeg" alt="green revolution" class="  rounded-4xl h-10 w-10 object-contain" />
+            <img src="./pics/greenlogo.webp" alt="green revolution" width="120" height="120" loading="lazy" decoding="async" class="  rounded-4xl h-10 w-10 object-contain" />
           </div>
 
           <div>
@@ -314,6 +335,7 @@
       display: flex;
       width: max-content;
       animation: marquee 22s linear infinite;
+      will-change: transform;
     }
 
     .marquee-track:hover {
@@ -337,70 +359,65 @@
         <!-- Tailwind CSS -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
-            alt="Tailwind CSS" class="h-5 w-5" />
+          <img src="./pics/icons/tailwindcss-original.svg"
+            alt="Tailwind CSS" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Tailwind CSS</span>
         </div>
         <!-- JavaScript -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript" class="h-5 w-5" />
+          <img src="./pics/icons/javascript-original.svg"
+            alt="JavaScript" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">JavaScript</span>
         </div>
         <!-- React -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
-            class="h-5 w-5" />
+          <img src="./pics/icons/react-original.svg" alt="React" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">React</span>
         </div>
         <!-- HTML5 -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
-            class="h-5 w-5" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">HTML5</span>
         </div> -->
         <!-- CSS3 -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-            class="h-5 w-5" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">CSS3</span>
         </div> -->
         <!-- Git -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
-            class="h-5 w-5" />
+          <img src="./pics/icons/git-original.svg" alt="Git" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Git</span>
         </div>
         <!-- Vercel -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" width="20" height="20" loading="lazy" decoding="async"
             class="h-5 w-5 invert" />
           <span class="text-sm text-white/80 whitespace-nowrap">Vercel</span>
         </div> -->
         <!-- Netlify -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify"
-            class="h-5 w-5" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Netlify</span>
         </div> -->
         <!-- Cloudflare -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
-            alt="Cloudflare" class="h-5 w-5" />
+          <img src="./pics/icons/cloudflare-original.svg"
+            alt="Cloudflare" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Cloudflare</span>
         </div>
         <!-- GitHub -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+          <img src="./pics/icons/github-original.svg" alt="GitHub" width="20" height="20" loading="lazy" decoding="async"
             class="h-5 w-5 invert" />
           <span class="text-sm text-white/80 whitespace-nowrap">GitHub</span>
         </div>
@@ -409,70 +426,65 @@
         <!-- Tailwind CSS -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
-            alt="Tailwind CSS" class="h-5 w-5" />
+          <img src="./pics/icons/tailwindcss-original.svg"
+            alt="Tailwind CSS" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Tailwind CSS</span>
         </div>
         <!-- JavaScript -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript" class="h-5 w-5" />
+          <img src="./pics/icons/javascript-original.svg"
+            alt="JavaScript" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">JavaScript</span>
         </div>
         <!-- React -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
-            class="h-5 w-5" />
+          <img src="./pics/icons/react-original.svg" alt="React" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">React</span>
         </div>
         <!-- HTML5 -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
-            class="h-5 w-5" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">HTML5</span>
         </div> -->
         <!-- CSS3 -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-            class="h-5 w-5" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">CSS3</span>
         </div> -->
         <!-- Git -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
-            class="h-5 w-5" />
+          <img src="./pics/icons/git-original.svg" alt="Git" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Git</span>
         </div>
         <!-- Vercel -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" width="20" height="20" loading="lazy" decoding="async"
             class="h-5 w-5 invert" />
           <span class="text-sm text-white/80 whitespace-nowrap">Vercel</span>
         </div> -->
         <!-- Netlify -->
         <!-- <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify"
-            class="h-5 w-5" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Netlify</span>
         </div> -->
         <!-- Cloudflare -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg"
-            alt="Cloudflare" class="h-5 w-5" />
+          <img src="./pics/icons/cloudflare-original.svg"
+            alt="Cloudflare" width="20" height="20" loading="lazy" decoding="async" class="h-5 w-5" />
           <span class="text-sm text-white/80 whitespace-nowrap">Cloudflare</span>
         </div>
         <!-- GitHub -->
         <div
           class="flex-shrink-0 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 mr-4 transition hover:border-white/20 hover:bg-white/[0.04]">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+          <img src="./pics/icons/github-original.svg" alt="GitHub" width="20" height="20" loading="lazy" decoding="async"
             class="h-5 w-5 invert" />
           <span class="text-sm text-white/80 whitespace-nowrap">GitHub</span>
         </div>
@@ -605,25 +617,27 @@
   </footer>
 
   <script>
-    const themeToggleBtn = document.getElementById('themeToggle');
-    const sunIcon = document.getElementById('sunIcon');
-    const moonIcon = document.getElementById('moonIcon');
+    (function () {
+      const themeToggleBtn = document.getElementById('themeToggle');
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
 
-    if (!themeToggleBtn || !sunIcon || !moonIcon) return;
+      if (!themeToggleBtn || !sunIcon || !moonIcon) return;
 
-    // restore theme
-    if (localStorage.theme === 'light') {
-      document.documentElement.classList.add('light');
-      sunIcon.classList.add('hidden');
-      moonIcon.classList.remove('hidden');
-    }
+      function syncIcons(isLight) {
+        sunIcon.classList.toggle('hidden', isLight);
+        moonIcon.classList.toggle('hidden', !isLight);
+      }
 
-    themeToggleBtn.addEventListener('click', () => {
-      const isLight = document.documentElement.classList.toggle('light');
-      localStorage.theme = isLight ? 'light' : 'dark';
-      sunIcon.classList.toggle('hidden');
-      moonIcon.classList.toggle('hidden');
-    });
+      // theme class is already applied in <head> to avoid a flash
+      syncIcons(document.documentElement.classList.contains('light'));
+
+      themeToggleBtn.addEventListener('click', () => {
+        const isLight = document.documentElement.classList.toggle('light');
+        try { localStorage.theme = isLight ? 'light' : 'dark'; } catch (e) {}
+        syncIcons(isLight);
+      });
+    })();
   </script>
 
 
@@ -682,31 +696,7 @@
     });
   </script>
 
-  <!-- Light Dark Mode -->
-
-  <script>
-    const toggle = document.getElementById('themeToggle');
-    const sun = document.getElementById('sunIcon');
-    const moon = document.getElementById('moonIcon');
-
-    // persist theme
-    if (localStorage.theme === 'light') {
-      document.documentElement.classList.add('light');
-      sun.classList.add('hidden');
-      moon.classList.remove('hidden');
-    }
-
-    toggle.addEventListener('click', () => {
-      const isLight = document.documentElement.classList.toggle('light');
-      localStorage.theme = isLight ? 'light' : 'dark';
-      sun.classList.toggle('hidden');
-      moon.classList.toggle('hidden');
-    });
-  </script>
-
-
-
-<script src="./index.js"></script>
+<script src="./index.js" defer></script>
 
   
 
