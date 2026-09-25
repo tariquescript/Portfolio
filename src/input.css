@@ -53,6 +53,35 @@
     outline-color: rgba(0, 0, 0, 0.45);
   }
 
+  /* touch devices only: grow the tap area, not the visible control */
+  @media (pointer: coarse) {
+    #themeToggle,
+    #menuToggle,
+    #mobileMenu a {
+      position: relative;
+    }
+
+    #themeToggle::after,
+    #menuToggle::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 44px;
+      height: 44px;
+      transform: translate(-50%, -50%);
+    }
+
+    #mobileMenu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -8px;
+      bottom: -8px;
+    }
+  }
+
   * {
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
