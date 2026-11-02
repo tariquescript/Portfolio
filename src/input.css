@@ -231,3 +231,51 @@
   0%,100%{opacity:1;}
   50%{opacity:0;}
 }
+
+/* Primary button: white on dark, so it flips to dark on the light theme */
+.light .btn-primary {
+  background-color: #0b0d10;
+  color: #ffffff;
+}
+
+.light .btn-primary:hover {
+  background-color: #000000;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.light .btn-primary svg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.light .btn-primary:hover svg {
+  color: #ffffff;
+}
+
+/* Stack icons inverted for the dark theme (GitHub) go back to their own colour */
+.light .marquee-track .invert {
+  filter: none;
+}
+
+/* Mobile menu eases in instead of popping */
+@media (prefers-reduced-motion: no-preference) {
+  #mobileMenu:not(.hidden) {
+    animation: menu-in 180ms cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  #mobileOverlay:not(.hidden) {
+    animation: fade-in 180ms ease-out;
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}

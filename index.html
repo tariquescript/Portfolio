@@ -16,8 +16,9 @@
     } catch (e) {}
   </script>
 
-  <link rel="stylesheet" href="./output.css?v=8782ef7b" />
+  <link rel="stylesheet" href="./output.css?v=63ec46ed" />
   <link rel="icon" href="./pics/me.webp" />
+  <link rel="canonical" href="https://tariquescript.vercel.app/" />
 
   <title>Tarique Shaikh — Frontend Developer</title>
   <meta name="description"
@@ -28,7 +29,8 @@
   <meta property="og:title" content="Tarique Shaikh — Frontend Developer" />
   <meta property="og:description"
     content="Frontend developer building fast, clean, reliable web interfaces with React, Tailwind CSS, and modern JavaScript." />
-  <meta property="og:image" content="./pics/me.webp" />
+  <meta property="og:image" content="https://tariquescript.vercel.app/pics/me.webp" />
+  <meta property="og:url" content="https://tariquescript.vercel.app/" />
   <meta name="twitter:card" content="summary" />
 
 </head>
@@ -48,7 +50,7 @@
         <div class="flex items-center gap-8 text-sm text-white/60">
           <!-- Desktop nav -->
           <nav class="hidden md:flex items-center gap-10">
-            <a href="./index.html" class=" text-white transition">home</a>
+            <a href="./index.html" class=" text-white transition" aria-current="page">home</a>
 
             <a href="#work" class=" hover:text-white transition">work</a>
             <a href="./projects.html" class=" hover:text-white transition">projects</a>
@@ -84,27 +86,23 @@
         </div>
       </div>
 
-      <!-- Mobile menu overlay -->
-      <div id="mobileOverlay" class="fixed inset-0 z-40 hidden bg-black/40 ">
-
-      </div>
-
-      <!-- Mobile menu (overlay, not pushing content) -->
-      <div id="mobileMenu" class="fixed top-[64px] left-0 right-0 z-50 hidden
-         bg-[#0b0d10]/95 backdrop-blur border-b border-white/10">
-
-        <nav class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80">
-
-          <a href="./index.html" class="mobile-link text-white transition">home</a>
-
-          <a href="#work" class="mobile-link hover:text-white transition">work</a>
-          <a href="./projects.html" class="mobile-link hover:text-white transition">projects</a>
-          <a href="#blog" class="mobile-link hover:text-white transition">blog</a>
-        </nav>
-      </div>
-
     </div>
   </header>
+
+  <!-- Mobile menu overlay (outside the header: its backdrop blur would trap fixed children) -->
+  <div id="mobileOverlay" class="fixed inset-0 z-40 hidden bg-black/40"></div>
+
+  <!-- Mobile menu (overlay, not pushing content); top is set to the header's height on open -->
+  <div id="mobileMenu" class="fixed top-[61px] left-0 right-0 z-50 hidden
+     bg-[#0b0d10]/95 backdrop-blur border-b border-white/10">
+
+    <nav class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80">
+      <a href="./index.html" class="mobile-link text-white transition" aria-current="page">home</a>
+      <a href="#work" class="mobile-link hover:text-white transition">work</a>
+      <a href="./projects.html" class="mobile-link hover:text-white transition">projects</a>
+      <a href="#blog" class="mobile-link hover:text-white transition">blog</a>
+    </nav>
+  </div>
 
 
 
@@ -155,7 +153,7 @@
           <a href="./Tarique_Resume.pdf" target="_blank"
             class="group inline-flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 text-sm transition duration-300 hover:bg-white/5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12)] hover:backdrop-blur">
             <svg
-              class="w-6 h-6 text-white/70 group-hover:text-white transition transform             group-hover:-translate-y-0.5"
+              class="w-4 h-4 text-white/70 group-hover:text-white transition transform group-hover:-translate-y-0.5"
               fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M12 3v10m0 0l4-4m-4 4l-4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
@@ -164,7 +162,7 @@
             <span>resume</span>
           </a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tariquescript@gmail.com" target="_blank"
-            class="group inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm transition duration-300 hover:bg-white/90 hover:shadow-[0_8px_30px_rgba(255,255,255,0.25)]">
+            class="btn-primary group inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm transition duration-300 hover:bg-white/90 hover:shadow-[0_8px_30px_rgba(255,255,255,0.25)]">
             <svg class="w-4 h-4 text-black/70 group-hover:text-black transition transform group-hover:-translate-y-0.5"
               fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -195,7 +193,7 @@
 
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/tariquedev/" target="_blank" aria-label="LinkedIn"
-            class=" text-white/90 hover: transition transform hover:-translate-y-0.5 hover:scale-110">
+            class="text-white/90 hover:text-white transition transform hover:-translate-y-0.5 hover:scale-110">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path
                 d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05v6.36h-4v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9v-12z" />
@@ -210,12 +208,6 @@
         <img src="./pics/me.webp" alt="Tarique Shaikh" width="490" height="464" loading="eager" fetchpriority="high" decoding="async"
           class="h-full w-full object-cover object-top" />
       </div>
-
-
-
-    </div>
-
-
     </div>
 
   </section>
@@ -223,7 +215,7 @@
 
 
   <!-- WORK -->
-  <section id="work" class="max-w-[880px] mx-auto px-6 mt-22">
+  <section id="work" class="max-w-[880px] mx-auto px-6 mt-24">
     <div class="flex items-center justify-between mb-8">
       <h3 class="text-lg font-medium text-white/90">work</h3>
       <!-- <a href="" class="text-sm text-white/50 hover:text-white transition">view all</a> -->
@@ -253,7 +245,7 @@
         </div>
 
         <!-- RIGHT -->
-        <span class="text-xs text-white/40 max-md:ml-16">2024 - Present</span>
+        <span class="text-xs text-white/40 max-md:ml-16">2024 — present</span>
       </div>
     </a>
 
@@ -343,6 +335,12 @@
       animation-play-state: paused;
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-track {
+        animation: none;
+      }
+    }
+
     .marquee-wrapper {
       overflow: hidden;
       -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
@@ -350,7 +348,7 @@
     }
   </style>
 
-  <section class="max-w-[880px] mx-auto px-6 mt-16">
+  <section class="max-w-[880px] mx-auto px-6 mt-24">
     <h3 class="text-lg font-medium text-white/90 mb-8">stack</h3>
 
     <div class="marquee-wrapper">
@@ -497,11 +495,11 @@
 
   <!-- PROJECTS -->
   <!-- PROJECTS (HOME) -->
-  <section id="projects" class="max-w-[880px] mx-auto px-6 mt-25">
+  <section id="projects" class="max-w-[880px] mx-auto px-6 mt-24">
     <!-- Major projects -->
     <div class="flex items-center justify-between mb-6">
       <h3 class="text-lg font-medium text-white/90">projects</h3>
-      <a target="_blank" href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
+      <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition">view all</a>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -601,7 +599,7 @@
     <!-- Small / practice -->
     <div class="flex items-center justify-between mb-6">
       <h4 class="text-sm font-medium text-white/70">small & practice</h4>
-      <a href="./projects.html" class="text-sm text-white/50 hover:text-white transition" target="_blank" >view all</a>
+      <a href="./projects.html#apps" class="text-sm text-white/50 hover:text-white transition">view all</a>
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -618,7 +616,7 @@
         class="group relative rounded-xl border border-white/10 bg-white/[0.02] p-4 text-xs text-white/60 transition hover:border-white/20">
         <div class="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition"
           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
-        <span class="relative">sportsweed </span>
+        <span class="relative">sportsweed</span>
       </a>
 
       <a target="_blank" href="https://react-login-dashboard-tailwind.vercel.app"
@@ -634,15 +632,16 @@
           style="box-shadow: 0 0 0 1px rgba(255,255,255,0.12), 0 12px 30px rgba(255,255,255,0.06);"></div>
         <span class="relative">weight converter</span>
       </a>
+    </div>
   </section>
 
 
   <!-- BLOGS -->
-  <section id="blog" class="max-w-[880px] mx-auto px-6 mt-25">
+  <section id="blog" class="max-w-[880px] mx-auto px-6 mt-24">
     <div class="rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent p-6">
       <h3 class="text-lg font-medium text-white/90 mb-4">writing</h3>
       <p class="text-sm text-white/60 max-w-xl leading-6">
-        I’ll be sharing blogs soon — mostly about frontend engineering, UI decisions,
+        i’ll be sharing blogs soon — mostly about frontend engineering, UI decisions,
         performance, and lessons learned while building real products.
       </p>
       <p class="mt-4 text-xs text-white/40">coming soon</p>
@@ -652,11 +651,11 @@
 
 
   <!-- FOOTER -->
-  <footer class="mt-20 mb-10">
+  <footer class="mt-24 mb-10">
     <div class="max-w-[880px] mx-auto px-6">
       <div class="flex items-center justify-center border-t border-white/10 pt-8">
         <p class="text-xs text-white/40 text-center">
-          © 2025 Tarique Shaikh
+          © 2026 Tarique Shaikh
         </p>
       </div>
     </div>
@@ -698,6 +697,7 @@
     const mobileOverlay = document.getElementById('mobileOverlay');
 
     function openMenu() {
+      mobileMenu.style.top = document.querySelector('header').getBoundingClientRect().bottom + 'px';
       mobileMenu.classList.remove('hidden');
       mobileOverlay.classList.remove('hidden');
       menuIcon.classList.add('hidden');

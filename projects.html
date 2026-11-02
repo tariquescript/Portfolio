@@ -19,8 +19,9 @@
       } catch (e) {}
     </script>
 
-    <link rel="stylesheet" href="./output.css?v=8782ef7b" />
+    <link rel="stylesheet" href="./output.css?v=63ec46ed" />
     <link rel="icon" href="./pics/me.webp" />
+    <link rel="canonical" href="https://tariquescript.vercel.app/projects.html" />
 
     <title>Projects · Tarique Shaikh</title>
     <meta
@@ -35,6 +36,11 @@
       property="og:description"
       content="Projects by Tarique Shaikh — real-world React and Tailwind CSS builds alongside smaller frontend experiments."
     />
+    <meta
+      property="og:image"
+      content="https://tariquescript.vercel.app/pics/me.webp"
+    />
+    <meta property="og:url" content="https://tariquescript.vercel.app/projects.html" />
     <meta name="twitter:card" content="summary" />
   </head>
 
@@ -58,7 +64,7 @@
               <a href="index.html#work" class="hover:text-white transition"
                 >work</a
               >
-              <a href="projects.html" class="text-white">projects</a>
+              <a href="projects.html" class="text-white" aria-current="page">projects</a>
               <a href="index.html#blog" class="hover:text-white transition"
                 >blog</a
               >
@@ -138,29 +144,28 @@
           </div>
         </div>
       </div>
-
-      <!-- Mobile overlay -->
-      <div
-        id="mobileOverlay"
-        class="fixed inset-0 z-40 hidden bg-black/40 backdrop-blur-sm"
-      ></div>
-
-      <!-- Mobile menu -->
-      <div
-        id="mobileMenu"
-        class="fixed top-[64px] left-0 right-0 z-50 hidden bg-[#0b0d10]/95 backdrop-blur border-b border-white/10"
-      >
-        <nav
-          class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80"
-        >
-          <a href="./index.html" class="hover:text-white transition">home</a>
-          <a href="./projects.html" class="text-white transition">projects</a>
-
-          <a href="index.html#work" class="hover:text-white transition">work</a>
-          <a href="index.html#blog" class="hover:text-white transition">blog</a>
-        </nav>
-      </div>
     </header>
+
+    <!-- Mobile overlay (outside the header: its backdrop blur would trap fixed children) -->
+    <div
+      id="mobileOverlay"
+      class="fixed inset-0 z-40 hidden bg-black/40"
+    ></div>
+
+    <!-- Mobile menu; top is set to the header's height on open -->
+    <div
+      id="mobileMenu"
+      class="fixed top-[61px] left-0 right-0 z-50 hidden bg-[#0b0d10]/95 backdrop-blur border-b border-white/10"
+    >
+      <nav
+        class="max-w-[880px] mx-auto px-6 py-4 flex flex-col gap-4 text-sm text-white/80"
+      >
+        <a href="./index.html" class="hover:text-white transition">home</a>
+        <a href="index.html#work" class="hover:text-white transition">work</a>
+        <a href="./projects.html" class="text-white transition" aria-current="page">projects</a>
+        <a href="index.html#blog" class="hover:text-white transition">blog</a>
+      </nav>
+    </div>
 
     <!-- PAGE INTRO -->
     <section class="max-w-[880px] mx-auto px-6 pt-20">
@@ -394,7 +399,7 @@
           <div class="relative flex flex-col gap-3">
             <div class="flex items-center gap-3">
               <!-- <img src="./pics/sportsweed.png" alt="FE Global Education" class="h-8 w-8 object-contain" /> -->
-              <h3 class="text-sm font-medium text-white">E-COMMERCE APP</h3>
+              <h3 class="text-sm font-medium text-white">E-commerce App</h3>
             </div>
 
             <p class="text-sm text-white/60 leading-6 max-w-2xl">
@@ -406,7 +411,7 @@
 
             <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
               <span class="rounded-md border border-white/10 px-2 py-1"
-                >ReactJS</span
+                >React</span
               >
               <span class="rounded-md border border-white/10 px-2 py-1"
                 >JavaScript</span
@@ -781,7 +786,7 @@
 
             <div class="flex flex-wrap gap-2 pt-1 text-xs text-white/50">
               <span class="rounded-md border border-white/10 px-2 py-1"
-                >ReactJS</span
+                >React</span
               >
               <span class="rounded-md border border-white/10 px-2 py-1"
                 >JavaScript</span
@@ -1014,7 +1019,7 @@
                 >JavaScript</span
               >
               <span class="rounded-md border border-white/10 px-2 py-1"
-                >ReactJS</span
+                >React</span
               >
               <span class="rounded-md border border-white/10 px-2 py-1"
                 >Vercel</span
@@ -1297,7 +1302,7 @@
         <div
           class="flex items-center justify-center border-t border-white/10 pt-8"
         >
-          <p class="text-xs text-white/40">© 2025 Tarique Shaikh</p>
+          <p class="text-xs text-white/40">© 2026 Tarique Shaikh</p>
         </div>
       </div>
     </footer>
@@ -1310,6 +1315,8 @@
       const mobileOverlay = document.getElementById("mobileOverlay");
 
       function openMenu() {
+        mobileMenu.style.top =
+          document.querySelector("header").getBoundingClientRect().bottom + "px";
         mobileMenu.classList.remove("hidden");
         mobileOverlay.classList.remove("hidden");
         menuIcon.classList.add("hidden");
@@ -1361,18 +1368,20 @@
       const sun = document.getElementById("sunIcon");
       const moon = document.getElementById("moonIcon");
 
-      // persist theme
-      if (localStorage.theme === "light") {
-        document.documentElement.classList.add("light");
-        sun.classList.add("hidden");
-        moon.classList.remove("hidden");
+      function syncIcons(isLight) {
+        sun.classList.toggle("hidden", isLight);
+        moon.classList.toggle("hidden", !isLight);
       }
+
+      // theme class is already applied in <head> to avoid a flash
+      syncIcons(document.documentElement.classList.contains("light"));
 
       toggle.addEventListener("click", () => {
         const isLight = document.documentElement.classList.toggle("light");
-        localStorage.theme = isLight ? "light" : "dark";
-        sun.classList.toggle("hidden");
-        moon.classList.toggle("hidden");
+        try {
+          localStorage.theme = isLight ? "light" : "dark";
+        } catch (e) {}
+        syncIcons(isLight);
       });
     </script>
   </body>
