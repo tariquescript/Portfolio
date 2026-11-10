@@ -19,6 +19,8 @@
     font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
+    /* the hero canvas may reach past the column; clip (not hidden) keeps the sticky header working */
+    overflow-x: clip;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -278,4 +280,70 @@
   from {
     opacity: 0;
   }
+}
+
+/* ===============================
+   ECLIPSE (hero photo, js/eclipse.js)
+   =============================== */
+
+.eclipse-stage {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.eclipse-stage.is-on {
+  opacity: 1;
+}
+
+.eclipse-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.eclipse-label.is-on {
+  opacity: 1;
+}
+
+/* hairline leader on the side that faces the body */
+.eclipse-label::before,
+.eclipse-label::after {
+  content: "";
+  width: 12px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+.eclipse-label::after,
+.eclipse-label.is-left::before {
+  display: none;
+}
+
+.eclipse-label.is-left::after {
+  display: block;
+}
+
+.light .eclipse-label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.eclipse-label.is-plain::before,
+.eclipse-label.is-plain::after {
+  display: none;
 }

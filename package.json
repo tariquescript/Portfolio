@@ -6,12 +6,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "esbuild": "^0.28.2",
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/input.css -o ./output.css --watch",
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./output.css --minify"
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./output.css --minify",
+    "build:js": "esbuild src/eclipse.js --minify --format=esm --target=es2020 --define:__DEV__=false --outfile=js/eclipse.js"
   },
   "keywords": [],
   "author": "",

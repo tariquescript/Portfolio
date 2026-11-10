@@ -16,7 +16,7 @@
     } catch (e) {}
   </script>
 
-  <link rel="stylesheet" href="./output.css?v=63ec46ed" />
+  <link rel="stylesheet" href="./output.css?v=c250a69d" />
   <link rel="icon" href="./pics/me.webp" />
   <link rel="canonical" href="https://tariquescript.vercel.app/" />
 
@@ -203,10 +203,13 @@
 
       </div>
       <!-- PROFILE IMAGE (RIGHT) -->
-      <!-- IMAGE WRAPPER FOR SHARPNESS -->
-      <div class="h-48 w-48 max-sm:h-60 max-sm:w-60 rounded-full overflow-hidden ring-1 ring-white/10 bg-black">
-        <img src="./pics/me.webp" alt="Tarique Shaikh" width="490" height="464" loading="eager" fetchpriority="high" decoding="async"
-          class="h-full w-full object-cover object-top" />
+      <!-- shrink-0 keeps the photo round at 768-855px; eclipse.js mounts its canvas in here -->
+      <div class="relative isolate shrink-0 max-md:self-center" data-eclipse>
+        <!-- IMAGE WRAPPER FOR SHARPNESS -->
+        <div class="h-48 w-48 max-sm:h-60 max-sm:w-60 rounded-full overflow-hidden ring-1 ring-white/10 bg-black">
+          <img src="./pics/me.webp" alt="Tarique Shaikh" width="490" height="464" loading="eager" fetchpriority="high" decoding="async"
+            class="h-full w-full object-cover object-top" />
+        </div>
       </div>
     </div>
 
@@ -743,6 +746,26 @@
   </script>
 
 <script src="./index.js" defer></script>
+
+  <!-- Eclipse around the hero photo: loads only after the page is idle, and only where it will run well -->
+  <script>
+    (function () {
+      var wrap = document.querySelector('[data-eclipse]');
+      var net = navigator.connection;
+      if (!wrap || !window.WebGL2RenderingContext) return;
+      if (net && (net.saveData || /2g/.test(net.effectiveType || ''))) return;
+      if (navigator.deviceMemory && navigator.deviceMemory < 2) return;
+      function go() {
+        import('./js/eclipse.js?v=4c832a9b').then(function (m) { m.mount(wrap); }, function () {});
+      }
+      function idle() {
+        if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 2000 });
+        else setTimeout(go, 1200);
+      }
+      if (document.readyState === 'complete') idle();
+      else addEventListener('load', idle, { once: true });
+    })();
+  </script>
 
   
 
